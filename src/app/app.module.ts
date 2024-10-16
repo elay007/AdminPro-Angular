@@ -7,10 +7,15 @@ import { APP_ROUTES } from './app.routes';
 //Modulos
 import { PagesModule } from './pages/pages.module';
 
+//Temporalmente
+import { FormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
+//import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 
 // import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 // import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -25,7 +30,8 @@ import { RegisterComponent } from './login/register.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
+    //IncrementadorComponent,
     //NopagefoundComponent,
     //DashboardComponent,
     //ProgressComponent,
@@ -39,7 +45,8 @@ import { RegisterComponent } from './login/register.component';
     BrowserModule,
     AppRoutingModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
